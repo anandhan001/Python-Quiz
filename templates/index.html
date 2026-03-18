@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz App</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🧠 Quiz Challenge</h1>
+
+<p>Enter your name to start the quiz</p>
+
+<form action="/quiz" method="GET">
+
+<div class="name-row">
+
+<label for="username">Enter your name:</label>
+
+<input type="text" id="username" name="username" placeholder="Your name" required class="name-input">
+
+</div>
+
+<br>
+
+<button type="submit">Start Quiz</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

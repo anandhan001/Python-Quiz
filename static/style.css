@@ -1,0 +1,436 @@
+body{
+
+font-family:'Poppins',sans-serif;
+
+margin:0;
+
+padding:0;
+
+min-height:100vh;
+
+background:linear-gradient(-45deg,#667eea,#764ba2,#5ac2ee,#e9eeef);
+
+background-size:400% 400%;
+
+animation:gradientBG 12s ease infinite;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+@keyframes gradientBG{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+/* Google Font Style */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+
+/* Main Quiz Card */
+.container{
+
+background:white;
+
+padding:40px;
+
+border-radius:18px;
+
+width:700px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+color:#333;
+
+}
+
+h1,h2,h3,p,label{
+
+color:#333;
+
+}
+
+
+/* Titles */
+h1{
+    text-align:center;
+    color:#000000;
+}
+
+h2{
+    text-align:center;
+}
+
+
+
+
+/* Question Text */
+.question-title{
+
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+
+/* Options */
+.option{
+
+margin:10px 0;
+
+padding:8px;
+
+border-radius:6px;
+
+}
+
+
+/* Radio Buttons */
+.option input{
+    margin-right:10px;
+}
+
+
+/* Button Style */
+button{
+
+    background:#4facfe;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    font-size:16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    background:#0078ff;
+
+    transform:scale(1.05);
+
+}
+
+
+/* Center Button */
+button{
+    display:block;
+    margin:20px auto;
+}
+
+.option{
+margin:6px 0;
+font-size:15px;
+cursor:pointer;
+}
+
+.option label{
+cursor:pointer;
+}
+
+/* Buttons under each question */
+
+.question-buttons{
+
+display:flex;
+gap:8px;
+margin-top:12px;
+
+}
+
+/* Save Button */
+
+.save-btn{
+
+background:#28a745;
+color:white;
+border:none;
+
+padding:6px 14px;
+font-size:13px;
+
+border-radius:6px;
+cursor:pointer;
+
+}
+
+.save-btn:hover{
+background:#218838;
+}
+
+
+
+.result-box{
+
+background:#f7f9fc;
+
+padding:15px;
+
+margin:15px 0;
+
+border-radius:10px;
+
+box-shadow:0px 5px 10px rgba(0,0,0,0.1);
+
+text-align:left;
+
+}
+
+.correct{
+color:green;
+font-weight:bold;
+}
+
+.wrong{
+color:red;
+font-weight:bold;
+}
+.name-input{
+
+padding:10px;
+
+width:60%;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+font-size:16px;
+
+text-align:center;
+
+}
+.name-row{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.name-input{
+
+padding:8px 12px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+font-size:14px;
+
+}
+
+.button-row{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+.next-btn{
+background:#28a745;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.prev-btn{
+background:#6c757d;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.next-btn:hover{
+background:#218838;
+}
+
+.prev-btn:hover{
+background:#5a6268;
+}
+h2{
+font-size:40px;
+color:#4CAF50;
+animation:pop 0.8s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(0.5);}
+100%{transform:scale(1);}
+}
+
+.container{
+
+width:700px;
+
+padding:40px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,0.15);
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 8px 32px rgba(0,0,0,0.25);
+
+border:1px solid rgba(255,255,255,0.2);
+
+color:white;
+
+animation:fadeIn 1s ease;
+
+}
+
+
+
+button{
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
+
+cursor:pointer;
+
+background:#ffffff;
+
+color:#333;
+
+transition:all 0.3s ease;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+background:#f1f1f1;
+
+}
+
+.restart-btn{
+
+display:block;
+
+margin-top:20px;
+
+text-align:center;
+
+padding:12px 20px;
+
+background:white;
+
+color:#333;
+
+border-radius:8px;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+.restart-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.question-heading{
+
+color:#0e0e0e;
+
+font-size:30px;
+
+font-weight:700;
+
+text-align:center;
+
+letter-spacing:1px;
+
+text-shadow:0 0 8px rgba(255,209,102,0.7);
+
+margin-bottom:20px;
+
+}
+
+.question-box{
+
+background:#ffffff;
+
+padding:18px;
+
+border-radius:12px;
+
+margin-bottom:20px;
+
+border:1px solid #e0e0e0;
+
+box-shadow:0 6px 14px rgba(0,0,0,0.12);
+
+color:#333;
+
+}

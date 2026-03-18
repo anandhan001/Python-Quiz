@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 class="question-heading">
+QUESTION {{ q_index + 1 }} of {{ total }}
+</h2>
+
+<p class="question-title">{{ question.question }}</p>
+
+<form method="POST">
+
+{% for option in question.options %}
+
+<div class="option">
+
+<label>
+
+<input type="radio" name="answer" value="{{ option }}" required>
+
+{{ option }}
+
+</label>
+
+</div>
+
+{% endfor %}
+
+<div class="button-row">
+
+{% if q_index > 0 %}
+<button type="submit" name="action" value="prev" class="prev-btn">Previous</button>
+{% endif %}
+
+<button type="submit" name="action" value="next" class="next-btn">Next</button>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
